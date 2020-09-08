@@ -1,0 +1,135 @@
+Task 1 :
+
+int a = 18;
+int b = 6;
+int c = a + b;
+int d = a - b;
+int e = a * b;
+int f = a / b;
+int g = a % b;
+Console.WriteLine(c);
+Console.WriteLine(d);
+Console.WriteLine(e);
+Console.WriteLine(f);
+Console.WriteLine(g);
+
+Output :
+24
+12
+108
+3
+0
+
+Task 2 :
+
+int a = 5;
+int b = 4;
+int c = 2;
+int d = a + b * c;
+int e = (a + b) * c;
+int f = (a + b) - 6 * c + (12 * 4) / 3 + 12;
+Console.WriteLine(d);
+Console.WriteLine(e);
+Console.WriteLine(f);
+
+Output:
+13
+18
+25
+
+int a = 7;
+int b = 4;
+int c = 3;
+int d = (a + b) / c;
+Console.WriteLine(d);
+
+Output :
+3
+
+Task 3 :
+
+int a = 7;
+int b = 4;
+int c = 3;
+int d = (a + b) / c;
+int e = (a + b) % c;
+Console.WriteLine($"quotient: {d}");
+Console.WriteLine($"remainder: {e}");
+
+Ouput :
+quotient: 3
+remainder: 2
+
+int max = int.MaxValue;
+int min = int.MinValue;
+int what = max + 3;
+Console.WriteLine($"The range of integers is {min} to {max}");
+Console.WriteLine($"An example of overflow: {what}");
+
+Ouput :
+The range of integers is -2147483648 to 2147483647
+An example of overflow: -2147483646
+
+Task 4 :
+
+double a = 5;
+double b = 4;
+double c = 2;
+double d = (a + b) / c;
+Console.WriteLine(d);
+Ouput :
+4.5
+
+double a = 19;
+double b = 23;
+double c = 8;
+double d = (a + b) / c;
+Console.WriteLine(d);
+Ouput :
+5.25
+
+double max = double.MaxValue;
+double min = double.MinValue;
+Console.WriteLine($"The range of double is {min} to {max}");
+double third = 1.0 / 3.0;
+Console.WriteLine(third);
+Output ;
+The range of double is -1.79769313486232E+308 to 1.79769313486232E+308
+0.333333333333333
+
+Task 5 :
+
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+Console.WriteLine($"The range of the decimal type is {min} to {max}");
+Output :
+The range of the decimal type is -79228162514264337593543950335 to 79228162514264337593543950335
+
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b);
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d);
+Ouput :
+0.333333333333333
+0.3333333333333333333333333333
+
+Task 6 :
+
+double radius = 2.50;
+double area = Math.PI * radius * radius;
+Console.WriteLine(area);
+int length = 12;
+int breadth = 3;
+int area1 = length * breadth;
+Console.WriteLine(area1);
+int height = 4;
+int breadth1 = 2;
+int area2 = (height*breadth1)/2;
+Console.WriteLine(area2);
+
+Output :
+19.6349540849362
+36
+4
