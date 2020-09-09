@@ -156,3 +156,16 @@ Output :
 2584
 4181
 6765
+
+Task : Printing pattern
+int i,j;
+for (i = 1; i <= 10; i++)
+{
+for (j = 1; j <= i; j++)
+{
+Console.Write(7);
+}
+Console.Write(",");
+}
+Output:
+7,77,777,7777,77777,777777,7777777,77777777,777777777,7777777777,
