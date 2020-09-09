@@ -1,0 +1,158 @@
+Task 1 :
+var names = new List<string> { "Srilekha", "Ana", "Felipe" };
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Output :
+Hello SRILEKHA!
+Hello ANA!
+Hello FELIPE!
+
+Task 2 :
+var names = new List<string> { "Srilekha", "Ana", "Felipe" };
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Console.WriteLine();
+names.Add("Maria");
+names.Add("Bill");
+names.Remove("Ana");
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Output :
+Hello SRILEKHA!
+Hello ANA!
+Hello FELIPE!
+
+Hello SRILEKHA!
+Hello FELIPE!
+Hello MARIA!
+Hello BILL!
+
+var names = new List<string> { "Srilekha", "Ana", "Felipe" };
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Console.WriteLine();
+names.Add("Maria");
+names.Add("Bill");
+names.Remove("Ana");
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Console.WriteLine($"My name is {names[0]}.");
+Console.WriteLine($"I've added {names[2]} and {names[3]} to the list.");
+Console.WriteLine($"The list has {names.Count} people in it");
+Output :
+Hello SRILEKHA!
+Hello ANA!
+Hello FELIPE!
+
+Hello SRILEKHA!
+Hello FELIPE!
+Hello MARIA!
+Hello BILL!
+My name is Srilekha.
+I've added Maria and Bill to the list.
+The list has 4 people in it
+
+Task 3 :
+var names = new List<string> { "Srilekha", "Ana", "Felipe" };
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Console.WriteLine();
+names.Add("Maria");
+names.Add("Bill");
+names.Remove("Ana");
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Console.WriteLine($"My name is {names[0]}.");
+Console.WriteLine($"I've added {names[2]} and {names[3]} to the list.");
+Console.WriteLine($"The list has {names.Count} people in it");
+var index = names.IndexOf("Felipe");
+if (index != -1)
+  Console.WriteLine($"The name {names[index]} is at index {index}");
+
+var notFound = names.IndexOf("Not Found");
+  Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+names.Sort();
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Output :
+Hello SRILEKHA!
+Hello ANA!
+Hello FELIPE!
+
+Hello SRILEKHA!
+Hello FELIPE!
+Hello MARIA!
+Hello BILL!
+My name is Srilekha.
+I've added Maria and Bill to the list.
+The list has 4 people in it
+The name Felipe is at index 1
+When an item is not found, IndexOf returns -1
+Hello BILL!
+Hello FELIPE!
+Hello MARIA!
+Hello SRILEKHA!
+
+Task 4 :
+var fibonacciNumbers = new List<int> {1, 1};
+var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+fibonacciNumbers.Add(previous + previous2);
+
+foreach(var item in fibonacciNumbers)
+    Console.WriteLine(item);
+Output :
+1
+1
+2
+
+Task 5 :
+var fibonacciNumbers = new List<int> {1, 1};
+while (fibonacciNumbers.Count<20)
+{
+var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+fibonacciNumbers.Add(previous + previous2);
+}
+
+foreach(var item in fibonacciNumbers)
+    Console.WriteLine(item);
+Output :
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+1597
+2584
+4181
+6765
